@@ -3,6 +3,7 @@ package com.example.androidlearn;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.text.SimpleDateFormat;
@@ -18,6 +19,7 @@ public class CurrentTimeUpdate extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //  ---->  Thread Time Continuesly Working Start code    <----
         textView = findViewById(R.id.TextTime);
 
         Thread t1 = new Thread(){
@@ -46,5 +48,21 @@ public class CurrentTimeUpdate extends AppCompatActivity {
             }
         };
         t1.start();
+        //       ======================================================
+        //  ---->  Thread Time Continuesly Working END code    <----
+        //       ======================================================
+
+    }
+     //       ======================================================
+    //            ---->    Theme Button Code Start    <----
+    //        ======================================================
+
+    public void Light(View view) {
+    }
+
+    public void Dark(View view) {
+    }
+
+    public void Custom(View view) {
     }
 }

@@ -18,4 +18,45 @@
         android:textAlignment="center"
          />
 
+    <RelativeLayout
+        android:id="@+id/ThemeChangeLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        >
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <Button
+                android:id="@+id/bt1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="Light"
+                android:onClick="Light"/>
+            <Button
+                android:id="@+id/bt2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dark"
+                android:onClick="Dark"
+                />
+            <Button
+                android:id="@+id/bt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Custom"
+                android:onClick="Custom"
+                />
+        </RadioGroup>
+
+
+    </RelativeLayout>
+
 </RelativeLayout>
